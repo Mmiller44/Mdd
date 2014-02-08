@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	font: 62.5% 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	font-size: 1.6em;
+}
+
+a {
+	outline: 0;
+}
+
+/*--------------------------------------------------------- Navigation -----------------------------------------------------------------*/
+body {
+	background: url('../images/wallpaper7.jpg') no-repeat fixed 100% 100%;
+	background-size: cover;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+nav {
+	margin: 0 auto;
+	height: 100%;
+	background-color: rgba(0,0,0,.9);
+	overflow: hidden;
+}
+
+nav li {
+	font-family: 'Rock salt', cursive;
+	padding: 20px;
+	text-align: center;
+	float: left;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------- Body -----------------------------------------------------------------*/
+
+.container {
+	height: 100%;
+	color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+article {
+	margin-top: 100px;
+}
+
+.landing {
+	margin-top: 100px;
+	text-align: center;
+	font-family: 'Rock salt', cursive;
+}
+
+.landing h3 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.landing h2 { 
+	font-size: 2.2em;
+}
+
+a {
+	font-size: 1.6em;
+}
+
+.title {
+	font-size: 2em;
+	font-family: 'Rock salt', cursive;
+}
+
+article img {
+	float: left;
+	margin: 20px;
+}
+
+article p {
+	font-size: 1.4em;
+}
+
+article img:hover {
+	opacity: .5;
+}
+
+.detail {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.detail img {
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+	max-height: 400px;
+	margin-bottom: 40px;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
