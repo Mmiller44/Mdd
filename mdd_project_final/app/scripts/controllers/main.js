@@ -4,13 +4,13 @@ angular.module('mddProjectFinalApp')
   .controller('MainCtrl', ['$scope', 'FireConn',function ($scope, FireConn) {
     
     // FireConn.$bind($scope, 'projects');
-    $scope.projects = FireConn;
-    $scope.saveData = function(){
+    // $scope.projects = FireConn;
+    // $scope.saveData = function(){
  
-      FireConn.$add($scope.remoteData);
+    //   FireConn.$add($scope.remoteData);
 
-      location.reload();
-    };
+    //   location.reload();
+    // };
 
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
