@@ -4,10 +4,6 @@
 	<a href="#/work">View Work</a>
 </div>
 
-<!-- <input type="text" ng-model="remoteData.title" />
-<input type="text" ng-model="remoteData.imgURL" />
-<button ng-click="saveData()">Save</button> -->
-
 <footer>
 	<a href="www.facebook.com/mike.miller.3701"><img src="images/facebook_logo.png" width="50" height="50" alt="Facebook Logo"></a>
 	<a href="www.linkedin.com/pub/mike-miller/53/389/877"><img src="images/linkedIn_logo.png" width="50" height="50" alt="LinkednIn Logo"></a>
