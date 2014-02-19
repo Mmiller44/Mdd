@@ -15,9 +15,11 @@ App.controller('quizController', ['$scope','$rootScope','$routeParams', '$FireUs
     $scope.firequiz = $FireQuiz.$child($routeParams.number);
 
     // This function will be called everytimes they click an answer to move forward.
-    // var saveCurrentNumber = function (number)
-    // {
+    $scope.saveAnswer = function (answer)
+    {
+			console.log(answer);
+			// The answer needs to be saved to the user.
+    };
 
-    // };
 
 	}]);
