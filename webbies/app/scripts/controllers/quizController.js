@@ -15,9 +15,11 @@ App.controller('quizController', ['$scope','$rootScope','$routeParams', '$FireUs
     $scope.saveAnswer = function (answer)
     {
 			// The answer needs to be saved to the user.
-			// var currentNumber = $scope.firequiz;
+			// Saving the users place in the quiz as currentNumber.
+			$rootScope.user.currentNumber = $routeParams.number + 1;
 			$rootScope.user.answers.push(answer);
 			$rootScope.user.$save('answers');
+			$rootScope.user.$save('currentNumber');
 		};
 
 	}]);
