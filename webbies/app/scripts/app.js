@@ -39,23 +39,23 @@ App.run(['$firebaseSimpleLogin', '$FireUser', '$rootScope', '$location', functio
 
     // As soon as firebaseSimpleLogin has ran, this function is called.
     $rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
-      console.log('User ' + user.username);
 
       // Setting rootScope variables to equal the user id and username. 
       // Uid is the providers name and the persons id.
       $rootScope.user = $FireUser(user.uid);
       $rootScope.user.name = user.username;
 
+      // Setting an empty answers array to the user. Will populate this as the user goes through the quiz.
+      $rootScope.user.answers = {0: 'null'};
+
       // Saving the rootScope.name to the firebase DB. 
       $rootScope.user.$save('name');
+      $rootScope.user.$save('answers');
 
       // if there is a user, relocate them to the quiz page.
       if(user)
       {
         $location.path('/quizLanding');
-      }else
-      {
-        $location.path('/');
       }
 
     });

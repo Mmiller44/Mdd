@@ -9,6 +9,6 @@ App.controller('MainCtrl', ['$scope','$rootScope', '$FireUser',function ($scope,
     ];
 
     // This is my firebase data for users. Example: $scope.fireuser.name
-    $scope.fireuser = $FireUser;
+    $rootScope.fireuser = $FireUser;
 
 	}]);
