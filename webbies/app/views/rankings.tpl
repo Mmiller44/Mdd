@@ -3,11 +3,22 @@
 		<h3>Rankings</h3>
 		<h4>Name</h4>
 		<h5 class="floatRight">Score</h5>
-		<p class="name">Mike Miller</p>
-		<p class="floatRight">90%</p>
-		<p class="name">Mike Miller</p>
-		<p class="floatRight">90%</p>
-		<p class="name">Mike Miller</p>
-		<p class="floatRight">90%</p>
+	
+		<div class="myClearFix">
+			<div class="ranking_block">
+				<p class="name">Mike Miller</p>
+				<p class="floatRight">90%</p>
+			</div>
+
+			<div class="ranking_block">
+				<p class="name">Mike Miller</p>
+				<p class="floatRight">90%</p>
+			</div>
+
+			<div class="ranking_block">
+				<p class="name">Adam Gedney</p>
+				<p class="floatRight">-10%</p>
+			</div>
+		</div>
 	</div>
 </div>

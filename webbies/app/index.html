@@ -27,13 +27,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-<div class="row">
-    <div class="col-lg-12">
       <header>
         <a href="#/home" class="logo"><h2>Webbies</h2></a>
         <nav class="navbar">
           <ul>
-            <a href="#/quiz"><li>Quiz</li></a>
+            <a href="#/quizLanding"><li>Quiz</li></a>
             <a href="#/rankings"><li>Rankings</li></a>
             <a ng-hide="loginObj.user" ng-click="loginObj.$login('github')"><li>Login</li></a>
             <a ng-show="loginObj.user" ng-click="loginObj.$logout()"><li>Logout</li></a>
@@ -41,8 +39,6 @@
         </nav>
         <img class="menu_icon" src="images/menu.png">
       </header>
-    </div> <!-- Closing Col -->
-  </div> <!-- Closing Row -->
 
     <div class="container" ng-view=""></div>
 
@@ -67,12 +63,14 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angular-mocks/angular-mocks.js"></script>
     <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="bower_components/angularfire/angularfire.js"></script>
-
     <!-- endbower -->
     <!-- endbuild -->
 

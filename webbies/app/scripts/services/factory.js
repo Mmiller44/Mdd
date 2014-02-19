@@ -3,10 +3,21 @@
 /*global Firebase */
 angular.module('webbiesApp')
 
-.factory('FireUser', ['$firebase', function ($firebase) {
+.factory('$FireUser', ['$firebase', function ($firebase) {
 
-	var url = 'https://webbies.firebaseIO.com/users',
+	
+	return function(uid)
+	{
+		var url = 'https://webbies.firebaseIO.com/users/' + uid,
 		ref = new Firebase( url );
+
+		return $firebase(ref);
+	};
+}])
+
+.factory('$FireQuiz', ['$firebase', function ($firebase) {
+
+	var ref = new Firebase('https://webbies.firebaseIO.com/quiz/questions');
 
 	return $firebase(ref);
 }]);

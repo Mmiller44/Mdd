@@ -52,6 +52,18 @@ a {
 	outline: 0;
 }
 
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*--------------------------------------------------------- Navigation -----------------------------------------------------------------*/
 header {
 	padding: 0;
@@ -59,7 +71,7 @@ header {
 	width: 100%;
 	background-color: #f1654c;
 	color: #f3f3f3;
-	font-family: 'Lemon', cursive;
+	font-family: 'bebas_neueregular', cursive;
 }
 
 header a{
@@ -79,6 +91,7 @@ header a:hover {
 
 nav { 
 	float: right;
+	margin: 0px;
 }
 
 nav li {
@@ -105,6 +118,10 @@ nav ul a {
 	margin-left: 10px;
 }
 
+.col-lg-12 {
+	padding: 0px;
+	overflow: hidden;
+}
 
 /*--------------------------------------------------------- Body -----------------------------------------------------------------*/
 
@@ -118,7 +135,7 @@ nav ul a {
 }
 
 .landing h2 {
-	font: 3em 'Lemon', cursive;
+	font: 3em 'bebas_neueregular', cursive;
 }
 
 .landing p {
@@ -132,7 +149,7 @@ nav ul a {
 }
 
 .ranking h3 {
-	font: 2em 'Lemon', cursive;
+	font: 2em 'bebas_neueregular', cursive;
 	margin-bottom: 15px;
 	text-align: center;
 }
@@ -140,34 +157,97 @@ nav ul a {
 .name {
 	float: left;
 	clear: both;
-	padding-bottom: 10px;
+	line-height: 1.5;
 }
 
 .ranking h4 {
 	float: left;
-	font: 1.5em 'Lemon', cursive;
+	font: 1.5em 'bebas_neueregular', cursive;
 }
 
 .ranking h5 {
-	font: 1.5em 'Lemon', cursive;
+	font: 1.5em 'bebas_neueregular', cursive;
 	margin-bottom: 10px;
 }
 
+.myClearFix {
+	clear: both;
+}
+
+.ranking_block {
+	overflow: hidden;
+}
+
+.ranking_block:nth-child(odd){
+	background-color: #e7e7e7 !important;
+}
 .floatRight {
 	float: right;
+	line-height: 1.5;
 }
 
 /*--------------------------------------------------------- Answers -----------------------------------------------------------------*/
 
 .question {
-	font-size: 1.8em;
+	font-size: 2.2em;
 	margin-top: 50px;
 	margin-bottom: 100px;
-	text-align: center;
+	color: #f1654c;
+	font-family: 'bebas_neueregular';
 }
 
-.answer1 {
-	height: 60px;
+.list-group a {
+	color: #335760;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+
+.item1 {
+	background: #e7e7e7 url(../images/a_block.png) no-repeat;
+	line-height: 40px;
+	padding-left: 70px;
+}
+
+.item2 {
+	background: #d9d9d9 url(../images/b_block.png) no-repeat;
+	line-height: 40px;
+	padding-left: 70px;
+}
+
+.item3 {
+	background: #e7e7e7 url(../images/c_block.png) no-repeat;
+	line-height: 40px;
+	padding-left: 70px;
+}
+
+.item4 {
+	background: #d9d9d9  url(../images/d_block.png) no-repeat;
+	line-height: 40px;
+	padding-left: 70px;
+}
+
+/*.list-group:nth-child(1) {
+	list-style-image: url(../images/a_block.png);
+}
+
+.list-group-item {
+	width: 90%;
+}*/
+
+/*.list-group a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #335760;
+	line-height: 1.5;
+}*/
+
+.list-group-item:hover {
+	opacity: .8;
+}
+
+/*.answer1 {
+	height: 100%;
+	line-height: 1.5;
 }
 
 .answer1 img {
@@ -176,17 +256,21 @@ nav ul a {
 }
 
 .answer1 p {
-	padding-top: 20px;
 	font-size: 1.5em;
-}
+	position: absolute;
+	top: 10%;
+	left: 65px;
+	bottom: 0;
+	right: 0;
+}*/
 
-.answer1:hover {
+/*.answer1:hover {
 	opacity: .6;
 }
 
 .answer1 a {
 	text-decoration: none;
-}
+}*/
 
 .button {
 	width: 200px;
@@ -207,9 +291,6 @@ nav ul a {
 .btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
 .btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
 .btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
-.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
-.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
-.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
 .btn-github{color:#fff;background-color:#444;border-color:rgba(0,0,0,0.2)}.btn-github:hover,.btn-github:focus,.btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{color:#fff;background-color:#303030;border-color:rgba(0,0,0,0.2)}
 .btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{background-image:none}
 .btn-github.disabled,.btn-github[disabled],fieldset[disabled] .btn-github,.btn-github.disabled:hover,.btn-github[disabled]:hover,fieldset[disabled] .btn-github:hover,.btn-github.disabled:focus,.btn-github[disabled]:focus,fieldset[disabled] .btn-github:focus,.btn-github.disabled:active,.btn-github[disabled]:active,fieldset[disabled] .btn-github:active,.btn-github.disabled.active,.btn-github[disabled].active,fieldset[disabled] .btn-github.active{background-color:#444;border-color:rgba(0,0,0,0.2)}
@@ -224,14 +305,32 @@ nav ul a {
 	.menu_icon {
 		display: block;
 		float: right;
-		width: 40px;
+		width: 30px;
 		height: 50%;
 		margin-top: 15px;
 		margin-right: 20px;
 	}
+	
+	.ranking {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
 
-	.ranking h3, .ranking h4, .ranking h5 {
-		font-size: 100%;
+	.ranking p {
+		padding: 10px;
+	}
+
+	.ranking h4, .ranking h5 {
+		font-size: 150%;
+		color: #f1654c;
+		padding: 10px;
+	}
+
+	.ranking h3 {
+		font-size: 180%;
+		color: #f1654c;
+		margin-top: 50px;
 	}
 
 	.landing {
@@ -239,6 +338,19 @@ nav ul a {
 		margin: 0 auto;
 		text-align: left;
 		margin-top: 50px;
+	}
+
+	.answer1 {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.question {
+		padding: 0;
+		margin: 0;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
  }
