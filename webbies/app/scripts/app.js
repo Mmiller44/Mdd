@@ -18,18 +18,22 @@ App.config(function ($routeProvider) {
       })
       .when('/quizLanding', {
         templateUrl: 'views/quizLanding.tpl',
-        controller: 'quizController'
+        controller: 'quizLandingController'
       })
       .when('/quiz/:number', {
         templateUrl: 'views/quiz.tpl',
         controller: 'quizController'
+      })
+      .when('/done', {
+        templateUrl: 'views/finished.tpl',
+        controller: 'finishedController'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
 
-App.run(['$firebaseSimpleLogin', '$FireUser', '$rootScope', '$location', function($firebaseSimpleLogin, $FireUser, $rootScope, $location){
+App.run(['$firebaseSimpleLogin','$window', '$FireUser', '$rootScope', '$location', function($firebaseSimpleLogin, $window, $FireUser, $rootScope, $location){
 
     // Reference to Firebase
     var dataRef = new Firebase('https://webbies.firebaseIO.com');
@@ -47,7 +51,8 @@ App.run(['$firebaseSimpleLogin', '$FireUser', '$rootScope', '$location', functio
       // if there is a user, relocate them to the quiz page.
       if(user)
       {
-        $location.path('/quizLanding');
+        // $location.path('/quizLanding');
+        $window.location.href = '#/quizLanding';
       }
 
     });

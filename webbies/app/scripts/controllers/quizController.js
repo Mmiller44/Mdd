@@ -1,7 +1,7 @@
 'use strict';
 
 var App = angular.module('webbiesApp');
-App.controller('quizController', ['$scope','$rootScope','$routeParams', '$FireUser','$FireQuiz', function ($scope, $rootScope, $routeParams, $FireUser, $FireQuiz) {
+App.controller('quizController', ['$window','$scope','$rootScope','$routeParams', '$FireUser','$FireQuiz', function ($window, $scope, $rootScope, $routeParams, $FireUser, $FireQuiz) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -10,6 +10,12 @@ App.controller('quizController', ['$scope','$rootScope','$routeParams', '$FireUs
 
     // Setting my quiz number to be the route parameter number.
     $scope.firequiz = $FireQuiz.$child($routeParams.number);
+
+    // Making a condition to check when the quiz is done, and to relocate the user.
+    if($routeParams.number === 'done')
+    {
+      $window.location.href = '#/done';
+    }
 
     // This function will be called everytimes they click an answer to move forward.
     $scope.saveAnswer = function (answer)
