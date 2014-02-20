@@ -22,6 +22,7 @@ angular.module('webbiesApp')
 			console.log('does not exist');
 			$rootScope.user.name = ref.username;
 			$rootScope.user.currentNumber = 1;
+			$rootScope.user.score = 0;
 
 			// Setting an empty answers array to the user. Will populate this as the user goes through the quiz.
 			$rootScope.user.answers = {0: 'null'};
@@ -30,6 +31,7 @@ angular.module('webbiesApp')
 			$rootScope.user.$save('name');
 			$rootScope.user.$save('answers');
 			$rootScope.user.$save('currentNumber');
+			$rootScope.user.$save('score');
 		}
 
 		return $firebase(ref);
@@ -38,7 +40,7 @@ angular.module('webbiesApp')
 
 .factory('$FireQuiz', ['$firebase', function ($firebase) {
 
-	var ref = new Firebase('https://webbies.firebaseIO.com/quiz/questions');
+	var ref = new Firebase('https://webbies.firebaseIO.com/quiz/');
 
 	return $firebase(ref);
 }]);
