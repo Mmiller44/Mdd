@@ -11,10 +11,13 @@ App.controller('quizController', ['$window','$scope','$rootScope','$routeParams'
     // Setting my quiz number to be the route parameter number.
     $scope.firequiz = $FireQuiz.$child('questions').$child($routeParams.number);
     $scope.firequiz.answerGuide = $FireQuiz.$child('answerGuide');
+
     // Making a condition to check when the quiz is done, and to relocate the user.
     if($routeParams.number === 'done')
     {
       $window.location.href = '#/done';
+      $rootScope.user.currentNumber = 'done';
+      $rootScope.user.$save('currentNumber');
     }
 
     // This function will be called everytimes they click an answer to move forward.
