@@ -14,7 +14,7 @@ angular.module('webbiesApp')
 		// Checking the firebase reference to make sure the user doesn't already exist.
 		if(ref.child(uid))
 		{
-			console.log('Exists');
+			console.log('Already Exists');
 		}else
 		{
 			// User didn't exist in Firebase.
