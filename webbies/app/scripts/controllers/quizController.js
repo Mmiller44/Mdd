@@ -48,9 +48,13 @@ App.controller('quizController', ['$window','$scope','$rootScope','$routeParams'
       $rootScope.user.$save('score');
 		};
 
+    // I call this function with ng-style.
+    // This function sets the width on my progress bar using the $routeParams.number
     $scope.setProgress = function()
     {
+      // Multiplying by 10, so each question corresponds to 10% of the width.
       var progressNumber = $routeParams.number * 10;
+      // ng-style needs an object returned.
       return {width: progressNumber + '%'};
     };
 
