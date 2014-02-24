@@ -40,16 +40,6 @@ angular.module('webbiesApp')
 
 		});
 
-		// Checking the firebase reference to make sure the user doesn't already exist.
-		// if(fb.$child(uid))
-		// {
-		// 	console.log('Exists');
-
-		// }else
-		// {
-			
-		// }
-
 		return $firebase(ref);
 	};
 }])
