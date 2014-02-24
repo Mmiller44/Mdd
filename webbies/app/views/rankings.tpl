@@ -5,19 +5,9 @@
 		<h5 class="floatRight">Score</h5>
 	
 		<div class="myClearFix">
-			<div class="ranking_block">
-				<p class="name">Mike Miller</p>
-				<p class="floatRight">90%</p>
-			</div>
-
-			<div class="ranking_block">
-				<p class="name">Mike Miller</p>
-				<p class="floatRight">90%</p>
-			</div>
-
-			<div class="ranking_block">
-				<p class="name">Adam Gedney</p>
-				<p class="floatRight">-10%</p>
+			<div class="ranking_block" ng-repeat="user in user">
+				<p class="name">{{ user.name}}</p>
+				<p class="floatRight">{{ user.score }}</p>
 			</div>
 		</div>
 	</div>
