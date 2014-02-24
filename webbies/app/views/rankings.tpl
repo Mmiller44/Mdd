@@ -5,8 +5,8 @@
 		<h5 class="floatRight">Score</h5>
 	
 		<div class="myClearFix">
-			<div class="ranking_block" ng-repeat="user in user">
-				<p class="name">{{ user.name}}</p>
+			<div class="ranking_block" ng-repeat="user in scores | orderBy:'score':true">
+				<p class="name">{{ user.name }}</p>
 				<p class="floatRight">{{ user.score }}</p>
 			</div>
 		</div>

@@ -13,6 +13,7 @@ App.controller('rankingsController', ['$scope', '$firebase', function ($scope, $
 		var	ref = new Firebase(url);
 
 		$scope.user = $firebase(ref);
+		var userScore = [];
 
 		// Getting a snapshot of the entire users DB.
 		ref.once('value', function(usersSnapshot) {
@@ -30,10 +31,12 @@ App.controller('rankingsController', ['$scope', '$firebase', function ($scope, $
 					var name = childData.name;
 					console.log(score + ' ' + name);
 
-					$scope.user.score = score;
-					$scope.user.name = name;
+					userScore.push({name: name, score: score});
+					// $scope.user.name = name;
 				}
-
+				
+				$scope.scores = userScore;
+				console.log($scope.scores);
 			});
 
 		});	// ending ref.once
