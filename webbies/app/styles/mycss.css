@@ -178,9 +178,23 @@ nav ul a {
 .ranking_block:nth-child(odd){
 	background-color: #e7e7e7 !important;
 }
+
 .floatRight {
 	float: right;
 	line-height: 1.5;
+}
+
+#progressbar {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar > div {
+   background-color: orange;
+   height: 20px;
+   border-radius: 10px;
 }
 
 /*--------------------------------------------------------- Answers -----------------------------------------------------------------*/
@@ -296,6 +310,10 @@ nav ul a {
 		margin: 0;
 		margin-top: 50px;
 		margin-bottom: 50px;
+	}
+
+	.list-group li {
+		font-size: 12px;
 	}
 
  }

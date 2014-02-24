@@ -12,6 +12,7 @@ App.controller('quizController', ['$window','$scope','$rootScope','$routeParams'
     $scope.firequiz = $FireQuiz.$child('questions').$child($routeParams.number);
     $scope.firequiz.answerGuide = $FireQuiz.$child('answerGuide');
     // Making a condition to check when the quiz is done, and to relocate the user.
+    console.log($scope.firequiz);
     if($routeParams.number === 'done')
     {
       $rootScope.user.currentNumber = 'done';
@@ -46,6 +47,12 @@ App.controller('quizController', ['$window','$scope','$rootScope','$routeParams'
       $rootScope.user.score = finalscore.toFixed(2);
       $rootScope.user.$save('score');
 		};
+
+    $scope.setProgress = function()
+    {
+      var progressNumber = $routeParams.number * 10;
+      return {width: progressNumber + '%'};
+    };
 
 
 	}]);
