@@ -4,5 +4,5 @@
 </div>
 </div>
 <a class="btn btn-block btn-social btn-github button" a ng-hide="loginObj.user" ng-click="loginObj.$login('github')">
-	<i class="fa fa-github">G</i> Login with Github
+	<i class="fa fa-github"><img src="images/github_icon.png"></i> Login with Github
 </a>

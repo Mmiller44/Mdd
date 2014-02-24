@@ -27,18 +27,33 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-      <header>
-        <a href="#/home" class="logo"><h2>Webbies</h2></a>
-        <nav class="navbar">
-          <ul>
-            <a href="#/quizLanding"><li>Quiz</li></a>
-            <a href="#/rankings"><li>Rankings</li></a>
-            <a ng-hide="loginObj.user" ng-click="loginObj.$login('github')"><li>Login</li></a>
-            <a ng-show="loginObj.user" ng-click="loginObj.$logout()"><li>Logout</li></a>
-          </ul>
-        </nav>
-        <img class="menu_icon" src="images/menu.png">
-      </header>
+    <header>
+      <a href="#/home" class="logo"><h2>Webbies</h2></a>
+
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-custom" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#/quizLanding">Quiz</a></li>
+              <li><a href="#/rankings">Rankings</a></li>
+              <li><a ng-hide="loginObj.user" ng-click="loginObj.$login('github')">Login</a></li>
+              <li><a ng-show="loginObj.user" ng-click="loginObj.$logout()">Logout</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
 
     <div class="container" ng-view=""></div>
 
