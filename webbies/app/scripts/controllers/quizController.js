@@ -14,6 +14,8 @@ App.controller('quizController', ['$window','$scope','$rootScope','$routeParams'
     // Making a condition to check when the quiz is done, and to relocate the user.
     if($routeParams.number === 'done')
     {
+      $rootScope.user.currentNumber = 'done';
+      $rootScope.user.$save('currentNumber');
       $window.location.href = '#/done';
     }
 

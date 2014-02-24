@@ -47,6 +47,7 @@ App.run(['$firebaseSimpleLogin','$window', '$FireUser', '$rootScope', '$location
       // Setting rootScope variables to equal the user id and username. 
       // Uid is the providers name and the persons id.
       $rootScope.user = $FireUser(user.uid);
+      $rootScope.user.name = user.username;
 
       // if there is a user, relocate them to the quiz page.
       if(user)
