@@ -28,6 +28,10 @@ App.config(function ($routeProvider) {
         templateUrl: 'views/finished.tpl',
         controller: 'finishedController'
       })
+      .when('/admin', {
+        templateUrl: 'views/adminView.tpl',
+        controller: 'adminController'
+      })
       .otherwise({
         redirectTo: '/'
       });
