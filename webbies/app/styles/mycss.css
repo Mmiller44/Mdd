@@ -74,15 +74,6 @@ header {
 	font-family: 'bebas_neueregular', cursive;
 }
 
-header a{
-	font-size: 3em;
-	float: left;
-	padding: 10px;
-	color: #f3f3f3;
-	text-decoration: none;
-	outline: 0;
-}
-
 header a:hover {
 	color: #f3f3f3;
 	opacity: .7;
@@ -116,6 +107,12 @@ nav ul a {
 
 .logo {
 	margin-left: 10px;
+	font-size: 3em;
+	float: left;
+	padding: 10px;
+	color: #f3f3f3;
+	text-decoration: none;
+	outline: 0;
 }
 
 .col-lg-12 {
@@ -226,51 +223,9 @@ nav ul a {
 	padding-left: 70px;
 }
 
-/*.list-group:nth-child(1) {
-	list-style-image: url(../images/a_block.png);
-}
-
-.list-group-item {
-	width: 90%;
-}*/
-
-/*.list-group a {
-	font-size: 1.5em;
-	text-decoration: none;
-	color: #335760;
-	line-height: 1.5;
-}*/
-
 .list-group-item:hover {
 	opacity: .8;
 }
-
-/*.answer1 {
-	height: 100%;
-	line-height: 1.5;
-}
-
-.answer1 img {
-	float: left;
-	margin-right: 10px;
-}
-
-.answer1 p {
-	font-size: 1.5em;
-	position: absolute;
-	top: 10%;
-	left: 65px;
-	bottom: 0;
-	right: 0;
-}*/
-
-/*.answer1:hover {
-	opacity: .6;
-}
-
-.answer1 a {
-	text-decoration: none;
-}*/
 
 .button {
 	width: 200px;
@@ -279,18 +234,21 @@ nav ul a {
 	margin-top: 50px;
 }
 
+.startButton {
+	text-align: center;
+	color: #fff; 
+	background-color: #F1654C; 
+	border-color: none;
+	width: 200px;
+	height: 35px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
 .btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
 .btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
 .btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
 .btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
-.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}.btn-social-icon :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
-.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
-.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
-.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
-.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
-.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
-.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
-.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
 .btn-github{color:#fff;background-color:#444;border-color:rgba(0,0,0,0.2)}.btn-github:hover,.btn-github:focus,.btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{color:#fff;background-color:#303030;border-color:rgba(0,0,0,0.2)}
 .btn-github:active,.btn-github.active,.open .dropdown-toggle.btn-github{background-image:none}
 .btn-github.disabled,.btn-github[disabled],fieldset[disabled] .btn-github,.btn-github.disabled:hover,.btn-github[disabled]:hover,fieldset[disabled] .btn-github:hover,.btn-github.disabled:focus,.btn-github[disabled]:focus,fieldset[disabled] .btn-github:focus,.btn-github.disabled:active,.btn-github[disabled]:active,fieldset[disabled] .btn-github:active,.btn-github.disabled.active,.btn-github[disabled].active,fieldset[disabled] .btn-github.active{background-color:#444;border-color:rgba(0,0,0,0.2)}

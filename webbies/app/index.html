@@ -28,7 +28,7 @@
 
     <!-- Add your site or application content here -->
     <header>
-      <a href="#/home" class="logo"><h2>Webbies</h2></a>
+      <h2 class="logo">Webbies</h2>
 
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -45,6 +45,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-custom" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+              <li ng-show="loginObj.user"><a href="#/quizLanding" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Welcome, {{loginObj.user.username}}</a></li>
               <li><a href="#/quizLanding" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Quiz</a></li>
               <li><a href="#/rankings" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Rankings</a></li>
               <li><a ng-hide="loginObj.user" ng-click="loginObj.$login('github')" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Login</a></li>
