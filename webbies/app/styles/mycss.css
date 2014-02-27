@@ -154,6 +154,7 @@ nav ul a {
 	font: 2em 'bebas_neueregular', cursive;
 	margin-bottom: 15px;
 	text-align: center;
+	color: #f1654c;
 }
 
 .name {
@@ -165,11 +166,13 @@ nav ul a {
 .ranking h4 {
 	float: left;
 	font: 1.5em 'bebas_neueregular', cursive;
+	color: #f1654c;
 }
 
 .ranking h5 {
 	font: 1.5em 'bebas_neueregular', cursive;
 	margin-bottom: 10px;
+	color: #f1654c;
 }
 
 .myClearFix {
