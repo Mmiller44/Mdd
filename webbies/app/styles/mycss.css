@@ -105,6 +105,11 @@ nav ul a {
 	border: none;
 }
 
+.navbar-collapse {
+	border: none;
+	box-shadow: none;
+}
+
 .logo {
 	margin-left: 10px;
 	font-size: 3em;

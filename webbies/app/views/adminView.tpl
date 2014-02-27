@@ -6,30 +6,30 @@
 		<div class="col-md-4 column">
 			<form role="form">
 				<div class="form-group">
-					 <label for="question">Question</label><input type="text" class="form-control" id="question" placeholder="What is the question?"/>
+					 <label for="question">Question</label><input type="text" class="form-control" id="question" placeholder="What is the question?" ng-model="question"/>
 				</div>
 				<div class="form-group">
-					 <label for="optionA">A</label><input type="text" class="form-control" id="optionA" placeholder="Option A" />
+					 <label for="optionA">A</label><input type="text" class="form-control" id="optionA" placeholder="Option A" ng-model="optionA" />
 				</div>
 				<div class="form-group">
-					 <label for="optionB">B</label><input type="text" class="form-control" id="optionB" placeholder="Option B"/>
+					 <label for="optionB">B</label><input type="text" class="form-control" id="optionB" placeholder="Option B" ng-model="optionB"/>
 				</div>				
 				<div class="form-group">
-					 <label for="optionC">C</label><input type="text" class="form-control" id="optionC" placeholder="Option C"/>
+					 <label for="optionC">C</label><input type="text" class="form-control" id="optionC" placeholder="Option C" ng-model="optionC"/>
 				</div>				
 				<div class="form-group">
-					 <label for="optionD">D</label><input type="text" class="form-control" id="optionD" placeholder="Option D"/>
+					 <label for="optionD">D</label><input type="text" class="form-control" id="optionD" placeholder="Option D" ng-model="optionD"/>
 				</div>
 
 				<div class="form-group">
-					 <label for="correctAnswer">Correct Answer</label><input type="text" class="form-control" placeholder="Correct Answer" id="correctAnswer" />
+					 <label for="correctAnswer">Correct Answer</label><input type="text" class="form-control" placeholder="Correct Answer" id="correctAnswer" ng-model="answer"/>
 				</div>
 
 				<div class="checkbox">
-					 <label><input type="checkbox" />Last Question?</label>
+					 <label><input type="checkbox" ng-model="last_question" />Last Question?</label>
 				</div>
 				
-				<button type="submit" class="btn btn-default">Submit</button>
+				<button type="submit" ng-click="save()" class="btn btn-default">Submit</button>
 			</form>
 		</div>
 

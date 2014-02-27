@@ -32,6 +32,10 @@ App.config(function ($routeProvider) {
         templateUrl: 'views/adminView.tpl',
         controller: 'adminController'
       })
+      .when('/answers', {
+        templateUrl: 'views/answers.tpl',
+        controller: 'answersController'
+      })
       .otherwise({
         redirectTo: '/'
       });
